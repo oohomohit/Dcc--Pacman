@@ -1,4 +1,4 @@
-# DCC---Pacman
+# DCC--Pacman
 
 ![Pacman Banner](./pacman.png)
 
@@ -23,11 +23,11 @@ DCC---Pacman is an engaging and interactive implementation of the classic Pacman
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/oohomohit/DCC---Pacman.git
+   git clone https://github.com/oohomohit/DCC--Pacman.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd DCC---Pacman
+   cd DCC--Pacman
    ```
 3. Install dependencies:
    ```bash
