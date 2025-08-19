@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { useGame } from "../contexts/GameContext";
 
 export function DifficultyLevel() {
   const [selectedLevel, setSelectedLevel] = useState('Easy Mode');
+  const [isStarting, setIsStarting] = useState(false);
   const navigate = useNavigate();
   const { setDifficulty, setMazeSize, MazeInput, setCurrentMaze, setStatus } = useGame();
 
@@ -56,7 +57,18 @@ export function DifficultyLevel() {
     height: "20px"
   };
 
-  const handleStart = () => {
+  // Effect to handle game start after state updates
+  useEffect(() => {
+    if (isStarting) {
+      const mazeData = MazeInput();
+      setCurrentMaze(mazeData);
+      setStatus("active");
+      navigate("/mazepage");
+      setIsStarting(false);
+    }
+  }, [isStarting, MazeInput, setCurrentMaze, setStatus, navigate]);
+
+  const handleStart = async () => {
     let mazeSize;
     switch(selectedLevel) {
       case 'Easy Mode':
@@ -72,12 +84,14 @@ export function DifficultyLevel() {
         mazeSize = 5;
     }
     
+    // Set all the context states first
     setDifficulty(selectedLevel);
     setMazeSize(mazeSize);
-    const mazeData = MazeInput();
-    setCurrentMaze(mazeData);
-    setStatus("active");
-    navigate("/mazepage");
+    
+    // Use a small delay to ensure state updates are processed
+    setTimeout(() => {
+      setIsStarting(true);
+    }, 0);
   };
 
   return (
