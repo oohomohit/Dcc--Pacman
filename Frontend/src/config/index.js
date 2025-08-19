@@ -1,7 +1,10 @@
+// config/index.js
 const isProd = import.meta.env.PROD;
+
+// Use environment variables - never hardcode production URLs
 export const API_URL = isProd 
-  ? 'https://your-backend-url.vercel.app'  // Replace with your actual backend URL
-  : import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  ? import.meta.env.VITE_PROD_API_URL
+  : import.meta.env.VITE_DEV_API_URL || 'http://localhost:5000';
 
 export const config = {
   apiUrl: API_URL,
@@ -12,4 +15,4 @@ export const config = {
     update: `${API_URL}/update`,
     leaderboard: `${API_URL}/leaderboard`
   }
-}; 
+};
