@@ -1,6 +1,6 @@
 // config/index.js
 const isProd = import.meta.env.PROD;
-
+//redeploy
 // Use environment variables - never hardcode production URLs
 export const API_URL = isProd 
   ? import.meta.env.VITE_PROD_API_URL
