@@ -136,7 +136,7 @@ function LoginPage() {
 
     axios.post(config.endpoints.login, loginPayload, {
       headers: { "Content-Type": "application/json" },
-      withCredentials: true,
+      withCredentials: false,
     })
     .then((res) => {
       setToken(res.data.data.accessToken);

@@ -10,10 +10,10 @@ export default defineConfig({
     sourcemap: true
   },
   server: {
-    port: 3000,
+    port: 5000,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || 'http://localhost:5000',
+        target: process.env.VITE_PROD_API_URL || 'http://localhost:5000',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, '')
