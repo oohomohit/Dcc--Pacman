@@ -36,7 +36,7 @@ function Header() {
         PACMAN ARCADE 
       </div>
       <nav style={{ display: 'flex', gap: '1rem' }}>
-        <button
+        {/* <button
           onClick={handleProfile}
           style={{
             backgroundColor: '#007BFF', // Blue background
@@ -50,7 +50,7 @@ function Header() {
           }}
         >
           Profile
-        </button>
+        </button> */}
         <button
           onClick={handleLogout}
           style={{

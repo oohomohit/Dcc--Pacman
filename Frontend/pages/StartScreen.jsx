@@ -69,7 +69,7 @@ function StartScreen() {
     display: "grid",
     gridTemplateColumns: "repeat(1, 1fr)",
     gap: "1.5rem",
-    "@media (min-width: 768px)": {
+    "@media (minWidth: 768px)": {
       gridTemplateColumns: "repeat(2, 1fr)"
     }
   };
