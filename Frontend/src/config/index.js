@@ -2,6 +2,7 @@
 const isProd = import.meta.env.PROD;
 //redeploy
 //redeploy v.2
+//redeploy v.3
 // Use environment variables - never hardcode production URLs
 
 console.log('🔍 Environment Variables:');
