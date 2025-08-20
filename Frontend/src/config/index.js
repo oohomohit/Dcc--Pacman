@@ -5,12 +5,12 @@ const isProd = import.meta.env.PROD;
 //redeploy v.3
 // Use environment variables - never hardcode production URLs
 
-console.log('🔍 Environment Variables:');
-console.log('- isProd:', isProd);
-console.log('- MODE:', import.meta.env.MODE);
-console.log('- VITE_DEV_API_URL:', import.meta.env.VITE_DEV_API_URL);
-console.log('- VITE_PROD_API_URL:', import.meta.env.VITE_PROD_API_URL);
-console.log('- All env vars:', import.meta.env);
+// console.log('🔍 Environment Variables:');
+// console.log('- isProd:', isProd);
+// console.log('- MODE:', import.meta.env.MODE);
+// console.log('- VITE_DEV_API_URL:', import.meta.env.VITE_DEV_API_URL);
+// console.log('- VITE_PROD_API_URL:', import.meta.env.VITE_PROD_API_URL);
+// console.log('- All env vars:', import.meta.env);
 
 export const API_URL = isProd 
   ? import.meta.env.VITE_PROD_API_URL
@@ -27,4 +27,4 @@ export const config = {
   }
 };
 
-console.log('📋 Config:', config);
+// console.log('📋 Config:', config);
