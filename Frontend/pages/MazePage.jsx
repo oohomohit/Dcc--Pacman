@@ -47,7 +47,7 @@ function MazePage() {
   const titleStyle = {
     color: "#FFD700",
     fontSize: "2rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     margin: 0,
     textShadow: "0 0 10px rgba(255, 215, 0, 0.3)"
   };
@@ -64,7 +64,7 @@ function MazePage() {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "0.875rem",
     transition: "all 0.3s ease"
   };
@@ -128,7 +128,7 @@ function MazePage() {
     color: "#FFD700",
     outline: "none",
     transition: "all 0.3s ease",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     textTransform: "uppercase"
   };
 
@@ -139,7 +139,7 @@ function MazePage() {
     color: "#FFD700",
     border: "2px solid #FFD700",
     borderRadius: "0.75rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "1rem",
     cursor: "pointer",
     transition: "all 0.3s ease",
@@ -147,7 +147,7 @@ function MazePage() {
   };
 
   const timerStyle = {
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "2rem",
     color: "#FFD700",
     textShadow: "0 0 10px rgba(255, 215, 0, 0.5)",

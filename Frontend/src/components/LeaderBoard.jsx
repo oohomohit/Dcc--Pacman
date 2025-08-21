@@ -49,7 +49,7 @@ function LeaderBoard() {
   const headerStyle = {
     color: "#FFD700",
     fontSize: "1.25rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     textAlign: "left",
     padding: "1rem",
     borderBottom: "2px solid rgba(255, 215, 0, 0.3)"
@@ -58,7 +58,7 @@ function LeaderBoard() {
   const sectionTitleStyle = {
     color: "#FFD700",
     fontSize: "1.5rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     padding: "1rem 0",
     borderBottom: "2px solid rgba(255, 215, 0, 0.3)",
     marginTop: "2rem"
@@ -68,7 +68,7 @@ function LeaderBoard() {
     color: "#FFD700",
     padding: "1rem",
     fontSize: "1rem",
-    fontFamily: "'Press Start 2P', cursive"
+    fontFamily:  "Press Start 2P"
   };
 
   const rowStyle = {

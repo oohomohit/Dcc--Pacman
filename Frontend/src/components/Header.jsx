@@ -29,7 +29,7 @@ function Header() {
           cursor: 'pointer', 
           fontWeight: 'bold', 
           fontSize: '1.5rem', // Larger font size for title
-          fontFamily: "'Press Start 2P', cursive" // Arcade font for title
+          fontFamily:  "Press Start 2P" // Arcade font for title
         }}
         title="Go to Game Start"
       >
@@ -60,8 +60,7 @@ function Header() {
             padding: '0.5rem 1rem',
             borderRadius: '5px',
             cursor: 'pointer',
-            fontWeight: 'bold',
-            fontFamily: "'VT323', monospace" // Consistent retro font
+            fontWeight: 'bold'
           }}
         >
           Logout

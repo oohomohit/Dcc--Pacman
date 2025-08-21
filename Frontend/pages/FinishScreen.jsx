@@ -59,7 +59,7 @@ function FinishScreen() {
 
   const titleStyle = {
     fontSize: "3rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     color: "#FFD700",
     textAlign: "center",
     marginBottom: "2rem",
@@ -78,7 +78,7 @@ function FinishScreen() {
 
   const scoreStyle = {
     fontSize: "2rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     color: "#FFD700",
     textAlign: "center",
     marginBottom: "1.5rem"
@@ -94,13 +94,12 @@ function FinishScreen() {
 
   const pathLabelStyle = {
     color: "#FFD700",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "0.875rem",
     marginBottom: "0.5rem"
   };
 
   const pathValueStyle = {
-    fontFamily: "monospace",
     fontSize: "1rem",
     wordBreak: "break-all"
   };
@@ -121,7 +120,7 @@ function FinishScreen() {
     backgroundColor: "#FFD700",
     color: "#000033",
     borderRadius: "0.75rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "1.125rem",
     cursor: "pointer",
     transition: "all 0.3s ease",
@@ -139,13 +138,13 @@ function FinishScreen() {
     marginBottom: "1rem",
     textAlign: "center",
     animation: "pulse 2s infinite",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "0.875rem"
   };
 
   const loadingStyle = {
     color: "#FFD700",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "1.5rem",
     animation: "pulse 2s infinite",
     textAlign: "center"
@@ -228,6 +227,7 @@ function FinishScreen() {
     if (!uss || !difficulty) return;
     
     const id = uss._id;
+    // console.log(`Updating user ${uss.userName} (${id}) with difficulty ${difficulty} and points ${points}`);
     axios.post(`${API_URL}/update`, { difficulty, points, id })
       .then((res) => {
         console.log(res.data.message || res.data.msg || "Score saved!");

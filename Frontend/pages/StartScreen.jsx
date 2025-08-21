@@ -44,7 +44,7 @@ function StartScreen() {
 
   const titleStyle = {
     fontSize: "4rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     color: "#FFD700",
     textAlign: "center",
     marginBottom: "1rem",
@@ -86,14 +86,15 @@ function StartScreen() {
 
   const cardTitleStyle = {
     fontSize: "1.5rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     color: "#FFD700",
     marginBottom: "1rem"
   };
 
   const leaderboardCardStyle = {
     ...cardStyle,
-    gridColumn: "1 / -1"
+    gridColumn: "1 / -1",
+    overflow: "hidden"
   };
 
   return (

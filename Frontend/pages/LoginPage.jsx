@@ -54,7 +54,7 @@ function LoginPage() {
 
   const titleStyle = {
     fontSize: "3rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     color: "#FFD700",
     textAlign: "center",
     marginBottom: "1rem",
@@ -77,7 +77,7 @@ function LoginPage() {
     display: "block",
     color: "#FFD700",
     marginBottom: "0.5rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "0.875rem"
   };
 
@@ -87,7 +87,7 @@ function LoginPage() {
     backgroundColor: "#FFD700",
     color: "#000033",
     borderRadius: "0.75rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "1.125rem",
     cursor: "pointer",
     transition: "all 0.3s ease",
@@ -111,7 +111,7 @@ function LoginPage() {
     marginTop: "2rem",
     textAlign: "center",
     color: "#FFD700",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "0.875rem"
   };
 

@@ -221,7 +221,7 @@ export const getCurrentUser = asyncHandler(async (req, res) => {
 });
 
 
-export const updateData=asyncHandler(async(req,res)=>{
+export const updateData = asyncHandler(async(req,res)=>{
     console.log("data from frontend ", req.body);
     const difficulty=req.body.difficulty;
     let type="easy";
@@ -237,6 +237,7 @@ export const updateData=asyncHandler(async(req,res)=>{
         throw new ApiError(500,"User not found while updating the user data");
     }
     // Only update if new score is higher
+    console.log(`Updating ${type} score for user ${user.userName}: ${user[type]} -> ${points}`);
     if (user[type] === null || points > user[type]) {
         user[type] = points;
         await user.save();

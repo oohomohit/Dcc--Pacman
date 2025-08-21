@@ -17,19 +17,19 @@ export function DifficultyLevel() {
     color: "#FFD700",
     border: "2px solid #FFD700",
     borderRadius: "0.75rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "0.875rem",
     cursor: "pointer",
     outline: "none",
     transition: "all 0.3s ease",
-    appearance: "none"
+    appearance: "none",
   };
 
   const labelStyle = {
     display: "block",
     color: "#FFD700",
     marginBottom: "0.5rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "1rem"
   };
 
@@ -39,7 +39,7 @@ export function DifficultyLevel() {
     backgroundColor: "#FFD700",
     color: "#000033",
     borderRadius: "0.75rem",
-    fontFamily: "'Press Start 2P', cursive",
+    fontFamily:  "Press Start 2P",
     fontSize: "1rem",
     cursor: "pointer",
     transition: "all 0.3s ease",
@@ -54,7 +54,7 @@ export function DifficultyLevel() {
     transform: "translateY(-50%)",
     pointerEvents: "none",
     width: "20px",
-    height: "20px"
+    height: "50px"
   };
 
   // Effect to handle game start after state updates
@@ -117,19 +117,19 @@ export function DifficultyLevel() {
             <option value="Easy Mode" style={{
               backgroundColor: "#000033",
               color: "#FFD700",
-              fontFamily: "'Press Start 2P', cursive",
+              fontFamily: "Press Start 2P",
               padding: "0.5rem"
             }}>Easy Mode</option>
             <option value="Medium Mode" style={{
               backgroundColor: "#000033",
               color: "#FFD700",
-              fontFamily: "'Press Start 2P', cursive",
+              fontFamily:  "Press Start 2P",
               padding: "0.5rem"
             }}>Medium Mode</option>
             <option value="Hard Mode" style={{
               backgroundColor: "#000033",
               color: "#FFD700",
-              fontFamily: "'Press Start 2P', cursive",
+              fontFamily:  "Press Start 2P",
               padding: "0.5rem"
             }}>Hard Mode</option>
           </select>
